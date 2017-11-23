@@ -1,0 +1,78 @@
+#slide {
+    float:left;
+    margin-left:1em;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+html, body, div.container{
+	height:100%;
+}
+
+#content{
+	height: 90%;
+	overflow:hidden;
+}	
+
+div.container {
+    width: 100%;
+   
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #007FFF;
+    clear: left;
+    text-align: center;
+}
+
+#CourseGradeList{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+nav {
+	background-color: #003FFF;
+	color:white;
+	height:90%;
+    float: left;
+    min-width:10%;
+    margin: 0;
+    padding: 0 1em 0 1em;
+}
+
+nav ul {
+	font-size:1.2em;
+	background-color:;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+	border-bottom: 1px solid white;
+	padding-top:1em;
+	cursor:pointer;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+nav li:hover{
+	color:black;
+}
+
+#content {
+    border-left: 1px solid gray;
+	overflow-y: scroll;
+}
